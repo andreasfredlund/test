@@ -12,8 +12,6 @@ void printArray(double *ptr, size_t length)
 } 
 
 
-double position( )
-
 // ändra igeeeeen
 void main(int argc, char **argv) {
   if (argc != 6){
