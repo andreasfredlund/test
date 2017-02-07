@@ -4,9 +4,9 @@
 #include "file_operations.h" 
 
 void printArray(double *ptr, size_t length)        
-{         
+{         int i;
     //for statment to print values using array             
-    for( int i=0; i < length; ++i )      
+    for(i=0; i < length; ++i )      
     printf("%lf \n", ptr[i]);        
 } 
 
