@@ -3,9 +3,17 @@
 #include <stdlib.h>
 #include "file_operations.h" 
 
+void printArray(double *ptr, size_t length)        
+{         
+    //for statment to print values using array             
+    for( int i=0; i < length; ++i )      
+    printf("%lf \n", ptr[i]);        
+} 
+
+
 void main(int argc, char **argv) {
   if (argc != 6){
-    printf("Error: wrong number of input arguments");
+    printf("Error: wrong number of input arguments\n");
     return ;
   }
 
@@ -19,6 +27,10 @@ void main(int argc, char **argv) {
   double* p = (double*)malloc(N*5*sizeof(double));
 
   int j= read_doubles_from_file(N*5, p, filename);
-  printf("%d\n", j);
-  printf("%d\n",sizeof(double) );
+  
+  printArray(p, N*5); 
+
+
+
+
 }
