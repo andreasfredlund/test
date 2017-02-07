@@ -16,7 +16,7 @@ $(EXECUTABLE): $(OBJS)
 file_operations.o: file_operations.h file_operations.c
 	$(CC) $(CFLAGS) -c file_operations.c
 
-galsim.o: galsim.c file_operations.h
+test1.o: test1.c file_operations.h
 	$(CC) $(CFLAGS) -c test1.c 
 
 clean:
