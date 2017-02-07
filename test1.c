@@ -1,6 +1,6 @@
 // test med github
 
-//HEJ /Simon
+//HEJ /Simon hej
 
 
 int main(int argc, char const *argv[])
