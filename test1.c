@@ -17,5 +17,8 @@ void main(int argc, char **argv) {
   int graphics = atoi(argv[5]);
   printf("Input:\nN: %d, File: %s, Number of steps: %d \nStepsize: %lf, Graphics on/off: %d ", N, filename, nsteps, delta_t, graphics);
   double* p = (double*)malloc(N*5*sizeof(double));
-  read_doubles_from_file(N*5, p, filename);
+
+  int j= read_doubles_from_file(N*5, p, filename);
+  printf("%d\n", j);
+  printf("%d\n",sizeof(double) );
 }
