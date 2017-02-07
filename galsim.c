@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "file_operations.h" 
+#include "graphics.h"
 
 void printArray(double *ptr, size_t length)        
 {         int i;
@@ -10,12 +11,16 @@ void printArray(double *ptr, size_t length)
     printf("%lf \n", ptr[i]);        
 } 
 
+
+double position( )
+
 // ändra igeeeeen
 void main(int argc, char **argv) {
   if (argc != 6){
     printf("Error: wrong number of input arguments\n");
     return ;
   }
+
 
   int N = atoi(argv[1]);
   char filename[100];
