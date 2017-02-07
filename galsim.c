@@ -10,7 +10,7 @@ void printArray(double *ptr, size_t length)
     printf("%lf \n", ptr[i]);        
 } 
 
-
+// ändra 
 void main(int argc, char **argv) {
   if (argc != 6){
     printf("Error: wrong number of input arguments\n");

@@ -1,7 +1,7 @@
 
 
 CC = gcc
-LD = gcc
+LD = gcc  
 CFLAGS = 
 LDFLAGS = 
 RM = /bin/rm -f
